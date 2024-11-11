@@ -22,7 +22,7 @@ void drawCircle() {
         glColor3f((i % 3 == 0) ? 1.0f : 0.0f, (i % 3 == 1) ? 1.0f : 0.0f, (i % 3 == 2) ? 1.0f : 0.0f);
 
         // Calcula a posição de cada ponto do círculo com o ângulo aplicado
-        float theta = 2.0f * M_PI * float(i) / float(numSegments) + angle;
+        float theta = 2.0f * 3.14 * float(i) / float(numSegments) + angle;
         float x = radius * cos(theta);
         float y = radius * sin(theta);
         glVertex2f(x, y);
